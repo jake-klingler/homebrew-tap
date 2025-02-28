@@ -1,20 +1,10 @@
-class Asdf < Formula
+class AsdfAT0150 < Formula
   desc "Extendable version manager with support for Ruby, Node.js, Erlang & more"
   homepage "https://asdf-vm.com/"
   url "https://github.com/asdf-vm/asdf/archive/refs/tags/v0.15.0.tar.gz"
   sha256 "d0cafe61d27b5e3fcb53658821bfbf744fd040a8ea28b0e22277e032b8e8f7fe"
   license "MIT"
   head "https://github.com/asdf-vm/asdf.git", branch: "master"
-
-  livecheck do
-    url :stable
-    regex(/^v?(\d+(?:\.\d+)+)$/i)
-  end
-
-  bottle do
-    rebuild 2
-    sha256 cellar: :any_skip_relocation, all: "a94dd362ce5c3a818f4fa56607eac3c616a3c1191e9f41480093bda2dc308af4"
-  end
 
   depends_on "autoconf"
   depends_on "automake"
