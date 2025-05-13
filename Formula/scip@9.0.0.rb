@@ -11,13 +11,8 @@ class ScipAT900 < Formula
   end
 
   bottle do
-    sha256 cellar: :any,                 arm64_sonoma:   "1613e0e61fad7535fa99ffcd84d8fcc50cc0129f199eec4694677f69bcfb9207"
-    sha256 cellar: :any,                 arm64_ventura:  "c9b790b5a808f51d69aae738acf14ce1ffd8d21a38d6bb0e9a673dc6680b0ca6"
-    sha256 cellar: :any,                 arm64_monterey: "991c0d33f2c999cb6331eee5790ef69a66792f3ca1cd71cc4944b8dbf9ef6c5d"
-    sha256 cellar: :any,                 sonoma:         "bd989a806ad39acbb796f9f31d9ad9e0a8a8d95be5f378565818f91c3286e029"
-    sha256 cellar: :any,                 ventura:        "da8e83d1efedfba851ab678f2ab9ab0c046a874438cedafc6e9fff5cfdee01a8"
-    sha256 cellar: :any,                 monterey:       "5a5c8cb550e57e5eed5e78c4bb3cce5a8ac612cbd91e3f0d3de327235d24af7e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "ed6b8ea13434faec0fa43aadece6838dd2b8c293355ddde883fbb8c787f86d01"
+    root_url "https://github.com/jake-klingler/homebrew-tap/releases/download/scip%409.0.0"
+    sha256 cellar: :any, arm64_sequoia: "6d1e3919b6e801e3bd60a60b220c8bf13fc9eaad5dee38ff6717be0519feafe9"
   end
 
   depends_on "cmake" => :build
